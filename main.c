@@ -1,11 +1,8 @@
 #include "functions.h"
 
 // Procedure: main
-// Description: Signal's controller. It's the response
-//              when the SIGINT signal was actived.
-//              This procedure prints in the command
-//              line a message if this signal has not
-//              been recieved before by the actual process.
+// Description: The main function of the code. Allows
+//              the execution of the program.
 //
 // Input: An integer and a pointer to strings. The
 //        integer represents the amount of arguments

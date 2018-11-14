@@ -4,11 +4,8 @@
 #include <stdlib.h>
 
 // Procedure: main
-// Description: Signal's controller. It's the response
-//              when the SIGINT signal was actived.
-//              This procedure prints in the command
-//              line a message if this signal has not
-//              been recieved before by the actual process.
+// Description: The main function of the code. Allows
+//              the execution of the program.
 //
 // Input: An integer and a pointer to strings. The
 //        integer represents the amount of arguments
@@ -17,13 +14,8 @@
 //        written to execute the code.
 // Output: An integer (status code).
 int main(int argc, char* argv[]) {
-    /*
-    argv[1] shoud be the counter
-    if argv[1] = "1" then argv[1] - 48 = 1
-    so argv[1] - 47 equals counter + 1
-    */
 
-    int contador = argv[1][0] - 47;
+    int contador = atoi(argv[1]);
     printf(">> pid: %d, y he recibido esta llamada %d veces.\n", getppid(), contador);
     return 0;
 }

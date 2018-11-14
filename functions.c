@@ -72,7 +72,7 @@ void init(int children, int mflag) {
         if (mflag) {
             printf("Mostrando la información por pantalla:\n");
             for (int i = 0; i < children; i++) {
-                printf("Numero %d, pid: %d\n", i+1, pids[i]);
+                printf("Numero: %d, pid: %d\n", i+1, pids[i]);
             }
         }
 

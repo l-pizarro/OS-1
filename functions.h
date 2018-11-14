@@ -64,6 +64,6 @@ char convertSignal(int number);
 //              the begining of the execution.
 //
 // Input: Two integer values, the number of childs to create and the
-//        flag .
+//        flag.
 // Output: None.
 void init(int children, int flag);

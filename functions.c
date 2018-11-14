@@ -1,5 +1,6 @@
 #include "functions.h"
 
+// Global variables: The scope allows the data comunicatin between process
 int counterFlag, interruptFlag, parentPid;
 
 void interruptSignalController(int value) {
